@@ -8,3 +8,6 @@ class Product(models.Model):
         max_digits=5, decimal_places=2, null=False)
     product_summary = models.TextField(default="this is cool")
     featured = models.BooleanField()
+
+    def __unicode__(self):
+            return self.product_name
