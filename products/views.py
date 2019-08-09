@@ -9,7 +9,7 @@ def products_view(request, *args, **kwargs):
     print(request.user.email)
     print(request.user.id)
     print(args)
-    return render(request, "index.html", {})
+    return render(request, "products.html", {})
     # if request.user == 'AnonymousUser':
     #     return HttpResponse('<h1>This is the products view for AnonymousUser</h1>')
     # else:
