@@ -1,3 +1,2 @@
-home_info/db*
-home_info/*.sqlite3
+home_info/db.sqlite3
 home_info/secret.py
