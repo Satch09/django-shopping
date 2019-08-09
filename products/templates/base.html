@@ -1,4 +1,3 @@
-{% load static %}
 <head>
   <!-- UIkit CSS -->
   <link
@@ -11,7 +10,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  {% block content %}
-  <!--Contents go here -->
-  {% endblock %}
+  <title>{{ request.user }}</title>
 </head>
+{% block content %}
+<!--Contents go here -->
+{% endblock %}
