@@ -22,12 +22,11 @@
             </div>
           </li>
           <li><a href="#">Item</a></li>
-
         </ul>
+        <h1>This is the products template for {{ request.user }}</h1>
+        <p>{{ request.user }} is currently signed in</p>
       </div>
     </nav>
   </div>
-  <h1>This is the products template for {{ request.user }}</h1>
-  <p>{{ request.user }} is currently signed in</p>
   {% include "product.html" %} {% endblock %}
 </body>

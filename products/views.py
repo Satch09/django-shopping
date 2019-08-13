@@ -6,13 +6,12 @@ from .models import Product
 
 def products_view(request, *args, **kwargs):
     products = Product.objects.all()
-    products_dict = {
+    all_products = {
         "products": products
     }
     print(request.user)
     print(request.user.email)
-    print(products_dict)
-    return render(request, "products.html", products_dict)
+    return render(request, "navbar.html", all_products)
     # if request.user == 'AnonymousUser':
     #     return HttpResponse('<h1>This is the products view for AnonymousUser</h1>')
     # else:

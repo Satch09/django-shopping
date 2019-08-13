@@ -9,5 +9,5 @@ class Product(models.Model):
     product_summary = models.TextField(default="this is cool")
     featured = models.BooleanField()
 
-    def __unicode__(self):
-            return self.product_name
+    def __str__(self):
+        return self.product_name
